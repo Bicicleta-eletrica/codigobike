@@ -41,4 +41,12 @@ while True:
     else: 
         print("Opção Inválida, tente novamente")
 
- 
+with open('usuarios.txt','w') as arq_users:
+  for user in usuarios:
+    arq_users.write(user)
+    arq_users.write('\n')
+
+with open('senhas.txt','w') as arq_senhas:
+  for sen in senhas:
+    arq_senhas.write(str(sen))
+    arq_senhas.write('\n') 
